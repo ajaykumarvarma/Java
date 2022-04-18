@@ -248,9 +248,12 @@ public class Main {
    {
       Scanner sc=new Scanner(System.in);
       int n;
+      
+      int count,rem,sum,num;
+      System.out.print("Enter the number for range starting from:");
+      count=sc.nextInt();
       System.out.print("Enter upto which range:");
       n=sc.nextInt();
-      int count=1,rem,sum,num;
       while(count<n){
       num = count;
       sum=0;
@@ -268,6 +271,7 @@ public class Main {
     }
     
 }
+
 -----------------------------------------------------------------------------------------------
 
    
