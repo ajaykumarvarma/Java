@@ -236,7 +236,39 @@ public class Main {
 }
 
 ------------------------------------------------------------------------------------------------------
-7) Program to print all armstrong numbers between 1 to 100
+7) Program to print all armstrong numbers between 1 to n
+# n is range input we are giving as input
+
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+    public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int n;
+      System.out.print("Enter upto which range:");
+      n=sc.nextInt();
+      int count=1,rem,sum,num;
+      while(count<n){
+      num = count;
+      sum=0;
+      while(num!=0){
+      rem=num%10;
+      sum=sum+rem*rem*rem;
+      num=num/10;
+      }
+      if(count==sum){
+      System.out.println(sum+" Is Amstrong Number");
+      }
+      count+=1;
+      }
+      
+    }
+    
+}
+-----------------------------------------------------------------------------------------------
 
    
    
