@@ -101,6 +101,39 @@ public class Main {
 }
 
 ---------------------------------------------------------------------------------------------------------
+ Amstrong Number
+ 
+ import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main {
+
+   
+    public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int n,r,sum=0,temp;
+      System.out.print("Enter a number:");
+      n=sc.nextInt();
+      temp=n;
+      while(n!=0){
+      r=n%10;
+      sum=sum+r*r*r;
+      n=n/10;
+      
+      }
+      if(temp==sum){
+      System.out.println("Its a Amstrong Number")
+      }
+      else{
+      System.out.println("Not An Amstrong Number");
+      }
+    }
+    
+}
+
+-----------------------------------------------------------------------------------
+   
    
    
   
