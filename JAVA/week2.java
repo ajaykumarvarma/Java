@@ -1,4 +1,4 @@
-Menu driven calculator program
+1) Menu driven calculator program
 
 import java.io.*;
 import java.util.*;
@@ -72,10 +72,9 @@ public class Main {
             } }}}
 
 -----------------------------------------------------------------------------------------------------------------------------
+2) Reversing a number in Java
   
-  Reversing a number in Java
-  
-  import java.io.*;
+import java.io.*;
 import java.util.*;
 import java.lang.*;
 public class Main {
@@ -101,9 +100,9 @@ public class Main {
 }
 
 ---------------------------------------------------------------------------------------------------------
- Amstrong Number
+3) Amstrong Number
  
- import java.io.*;
+import java.io.*;
 import java.util.*;
 import java.lang.*;
 public class Main {
@@ -133,7 +132,7 @@ public class Main {
 }
 
 -----------------------------------------------------------------------------------
-Biggest and Smallest digit a given multiple digit number
+4) Biggest and Smallest digit a given multiple digit number
 
 import java.io.*;
 import java.util.*;
@@ -166,7 +165,7 @@ public class Main {
 }
 
 ----------------------------------------------------------------------------------------------------
-Perfect Number
+5) Perfect Number
 
 import java.io.*;
 import java.util.*;
@@ -199,7 +198,7 @@ public class Main {
 }
 
 ------------------------------------------------------------------------------
-Strong Number
+6) Strong Number
 
 import java.io.*;
 import java.util.*;
@@ -237,6 +236,8 @@ public class Main {
 }
 
 ------------------------------------------------------------------------------------------------------
+7) Program to print all armstrong numbers between 1 to 100
+
    
    
    
