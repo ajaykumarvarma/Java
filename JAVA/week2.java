@@ -73,5 +73,34 @@ public class Main {
 
 -----------------------------------------------------------------------------------------------------------------------------
   
+  Reversing a number in Java
   
+  import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main {
+
+   
+    public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int n,rev=0,rem,temp;
+      System.out.println("Enter a number for reversing:");
+      n=sc.nextInt();
+      temp=n;
+      while(n!=0){
+      rem=n%10;
+      rev=(rev*10)+rem;
+      n=n/10;
+      
+      }
+      System.out.println("Reverse is:"+rev);
+      
+    }
+    
+}
+
+---------------------------------------------------------------------------------------------------------
+   
+   
   
