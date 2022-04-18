@@ -199,6 +199,44 @@ public class Main {
 }
 
 ------------------------------------------------------------------------------
+Strong Number
+
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+    public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int n;
+      System.out.print("Enter a number:");
+      n=sc.nextInt();
+      int temp=n;
+      int sum=0;
+      
+      while(n!=0){
+      int rem=n%10;
+      int fact=1;
+      for(int i=1;i<=rem;i++){
+      fact=fact*i;
+      }
+      n=n/10;
+      sum=sum+fact;
+      }
+      if(sum==temp){
+          System.out.println(sum+" is Strong number");
+      }
+      else{
+          System.out.println(temp+" is not Strong number");
+      
+      }
+      
+    }
+    
+}
+
+------------------------------------------------------------------------------------------------------
    
    
    
