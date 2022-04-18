@@ -133,6 +133,39 @@ public class Main {
 }
 
 -----------------------------------------------------------------------------------
+Biggest and Smallest digit a given multiple digit number
+
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+    public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int n,r;
+      System.out.print("Enter a number:");
+      n=sc.nextInt();
+      int min=9;
+      int max=0;
+      while(n>0){
+      r=n%10;
+      if(r>max){
+      max=r;
+      }
+      if(r<min)
+      {
+      min=r;
+      }
+      n=n/10;
+      }
+      System.out.println("Biggest digit is:"+max);
+      System.out.println("Smallest digit is:"+min);
+    }
+    
+}
+
+----------------------------------------------------------------------------------------------------
    
    
    
