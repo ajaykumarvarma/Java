@@ -166,6 +166,40 @@ public class Main {
 }
 
 ----------------------------------------------------------------------------------------------------
+Perfect Number
+
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+    public static void main(String args[])
+   {
+      Scanner sc=new Scanner(System.in);
+      int n;
+      System.out.print("Enter a number:");
+      n=sc.nextInt();
+      int temp=n;
+      int sum=0;
+      for(int i=1;i<n;i++){
+      int rem=n%i;
+      if (rem==0){
+      sum=sum+i;
+      }
+      }
+      if(sum==temp){
+      System.out.println(sum+" is an Perfect Number");
+      }
+      else{
+      System.out.println(temp+" is not an perfect number");
+      }
+      
+    }
+    
+}
+
+------------------------------------------------------------------------------
+   
    
    
    
