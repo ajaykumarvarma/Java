@@ -1,5 +1,6 @@
 # Java Lab Tasks
 
+[WEEK 0](https://java.ajaykumarvarma.in/JAVA/week0.java)
 
 [WEEK 1](https://java.ajaykumarvarma.in/JAVA/week1.java)
 
