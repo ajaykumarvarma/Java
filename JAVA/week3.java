@@ -85,6 +85,46 @@ public class Main {
    }
 }
 ------------------------------------------------------------
+//Sum of 2 matrices
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       int m1[][]=new int[3][3];
+       int m2[][]=new int[3][3];
+       int m3[][]=new int[3][3];
+       int i,j,k;
+       System.out.println("Enter First Matrix elements:");
+       for(i=0;i<3;i++){
+       for(j=0;j<3;j++){
+          m1[i][j]=sc.nextInt();
+       }
+       }
+       System.out.println("Enter Second Matrix elements:");
+       for(i=0;i<03;i++){
+       for(j=0;j<03;j++){
+          m2[i][j]=sc.nextInt();
+       }
+       }
+       for(i=0;i<3;i++){
+       for(j=0;j<3;j++){
+          m3[i][j]=m1[i][j]+m2[i][j];
+       }
+       }
+       System.out.println("Sum Of Two Matrices Is:");
+       for(i=0;i<3;i++){
+       for(j=0;j<3;j++){
+          System.out.print(m3[i][j]+" ");
+       }
+       System.out.println(" ");
+       }
+    }
+}
+-------------------------------------------------------------------
    
    
   
