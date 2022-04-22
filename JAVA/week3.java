@@ -61,5 +61,30 @@ public class Main {
 }
 
 ---------------------------------------------------------------------------
-  
+//3x3 unit matrix
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+   public static void main(String args[])
+   {
+       int a[][]=new int[3][3];
+       System.out.println("3x3 Unit Matrix is:");
+       for(int i=1;i<=3;i++){
+       for(int j=1;j<=3;j++){
+        if(i==j){
+        System.out.print(1+" ");
+        }
+        else{
+        System.out.print(0+" ");
+        }
+       }
+       System.out.println(" ");
+       }
+   }
+}
+------------------------------------------------------------
+   
+   
   
