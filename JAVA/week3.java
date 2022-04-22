@@ -125,6 +125,64 @@ public class Main {
     }
 }
 -------------------------------------------------------------------
+//Matrix Multiplication In Java
+import java.io.*;
+import java.util.*;
+public class Main {
+
+   
+   public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter First Matrix No Of Rows:");
+       int r1=sc.nextInt();
+       System.out.print("Enter First Matrix No Of Columns:");
+       int c1=sc.nextInt();
+       System.out.print("Enter Second Matrix No Of Rows:");
+       int r2=sc.nextInt();
+       System.out.print("Enter Second Matrix No Of Columns:");
+       int c2=sc.nextInt();
+       int m1[][]=new int[r1][c1];
+       int m2[][]=new int[r2][c2];
+       int m3[][]=new int[r1][c2]; 
+                  
+       int i,j,k;
+       
+       if(r1==c2){
+              System.out.println("Enter First Matrix elements:");
+       for(i=0;i<r1;i++){
+       for(j=0;j<c1;j++){
+          m1[i][j]=sc.nextInt();
+       }
+       }
+       System.out.println("Enter Second Matrix elements:");
+       for(i=0;i<r2;i++){
+       for(j=0;j<c2;j++){
+          m2[i][j]=sc.nextInt();
+       }
+       }
+             System.out.println("Resultant Matrix Multiplication is:");
+              for(i=0;i<r1;i++)
+              {
+               for(j=0;j<c2;j++)
+               {  
+                  m3[i][j]=0;
+                  for(k=0;k<c1;k++)
+                  {
+                      m3[i][j]+=m1[i][k]*m2[k][j];
+                  }   
+                  System.out.print(m3[i][j]+" ");
+               }  
+               System.out.println();
+              }
+       }
+       else{
+           System.out.println("Matrix Multiplication with size you gave is not possible !");
+       }  
+   }
+}
+
+-------------------------------------------------------------------
    
    
   
