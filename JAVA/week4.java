@@ -110,3 +110,48 @@ public static void main(String args[])
     }
 }     
 ---------------------------------------------------------------------------------   
+// Transpose of a matrix
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main{
+public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter Matrix No Of Rows:");
+       int r=sc.nextInt();
+       System.out.print("Enter Matrix No Of Columns:");
+       int c=sc.nextInt();
+       int m[][]=new int[r][c];
+       
+       int i,j;
+       System.out.println("Enter Matrix elements:");
+       for(i=0;i<r;i++)
+      {
+       for(j=0;j<c;j++)
+       {
+          m[i][j]=sc.nextInt();
+       }
+       }
+      //Transposing
+      System.out.println("Original Matrix is:");
+      for(i=0;i<r;i++)
+      {    
+        for(j=0;j<c;j++)
+        {    
+        System.out.print(m[i][j]+" ");    
+        }    
+        System.out.println();   
+      }
+      System.out.println("Transposed Matrix is:");
+      for(i=0;i<r;i++)
+      {    
+        for(j=0;j<c;j++)
+        {    
+        System.out.print(m[j][i]+" ");    
+        }    
+        System.out.println();   
+      }
+    }
+}     
+--------------------------------------------------------------------------
