@@ -8,4 +8,6 @@
 
 [WEEK 3](https://java.ajaykumarvarma.in/JAVA/week3.java)
 
-[WEEK 4](https://java.ajaykumarvarma.in/JAVA/week4.java)
+[WEEK 4 PART1](https://java.ajaykumarvarma.in/JAVA/week4.java)
+
+[WEEK 4 PART2](https://filetransfer.io/data-package/0x61k5Fa#link)
