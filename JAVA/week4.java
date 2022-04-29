@@ -193,3 +193,48 @@ public static void main(String args[])
     }
 }     
 ------------------------------------------------------------------------------
+//Java Program to find the sum of each row and each column of a matrix
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main{
+public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter Matrix No Of Rows:");
+       int r=sc.nextInt();
+       System.out.print("Enter Matrix No Of Columns:");
+       int c=sc.nextInt();
+       int m[][]=new int[r][c];
+       
+       int i,j,rsum=0,csum=0;
+       int i1,j1;
+       System.out.println("Enter Matrix elements:");
+       for(i=0;i<r;i++)
+      {
+       for(j=0;j<c;j++)
+       {
+          m[i][j]=sc.nextInt();
+       }}
+      for(i=0;i<r;i++)
+     {
+       rsum=0;
+      for(j=0;j<c;j++){
+       rsum+=m[i][j];
+      }
+      System.out.println("Sum of row"+(i+1)+" is:"+rsum);
+      
+      }
+      System.out.println();
+      for(i1=0;i1<c;i1++)
+     {
+         csum=0;
+      for(j1=0;j1<r;j1++){
+       csum+=m[j1][i1];
+      }
+      System.out.println("Sum of column"+(i1+1)+" is:"+csum);
+      }
+     }
+}     
+--------------------------------------------------------------------------------
+   
