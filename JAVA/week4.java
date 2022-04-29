@@ -54,4 +54,59 @@ public static void main(String args[])
     }
 }
 -----------------------------------------------------------------------------------
-  
+//UPPER AND LOWER TRIANGULAR MATRIX
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main{
+public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter Matrix No Of Rows:");
+       int r=sc.nextInt();
+       System.out.print("Enter Matrix No Of Columns:");
+       int c=sc.nextInt();
+       int m[][]=new int[r][c];
+       
+       int i,j;
+       System.out.println("Enter Matrix elements:");
+       for(i=0;i<r;i++)
+      {
+       for(j=0;j<c;j++)
+       {
+          m[i][j]=sc.nextInt();
+       }
+       }
+       System.out.println("Lower triangular matrix is:");
+       for(i=0;i<r;i++){
+           System.out.println();
+        for(j=0;j<c;j++){
+          if(i>=j){
+          System.out.print(m[i][j]);
+          System.out.print(" ");
+          }
+          else{
+          System.out.print("0");
+          System.out.print(" ");
+          }
+        }
+       }
+       System.out.println();
+       System.out.println("Upper triangular matrix is:");
+       for(i=0;i<r;i++){
+           System.out.println();
+        for(j=0;j<c;j++){
+          if(i>j){
+          System.out.print("0");
+          System.out.print(" ");
+          }
+          else{
+          System.out.print(m[i][j]);
+          System.out.print(" ");
+          }
+        }
+       }
+       System.out.println();
+    }
+}     
+---------------------------------------------------------------------------------   
