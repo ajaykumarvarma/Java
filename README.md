@@ -7,3 +7,5 @@
 [WEEK 2](https://java.ajaykumarvarma.in/JAVA/week2.java)
 
 [WEEK 3](https://java.ajaykumarvarma.in/JAVA/week3.java)
+
+[WEEK 4](https://java.ajaykumarvarma.in/JAVA/week4.java)
