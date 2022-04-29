@@ -155,3 +155,41 @@ public static void main(String args[])
     }
 }     
 --------------------------------------------------------------------------
+//Java Program to find the frequency of odd & even numbers in the given matrix
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main{
+public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter Matrix No Of Rows:");
+       int r=sc.nextInt();
+       System.out.print("Enter Matrix No Of Columns:");
+       int c=sc.nextInt();
+       int m[][]=new int[r][c];
+       
+       int i,j,even=0,odd=0;
+       System.out.println("Enter Matrix elements:");
+       for(i=0;i<r;i++)
+      {
+       for(j=0;j<c;j++)
+       {
+          m[i][j]=sc.nextInt();
+       }}
+      for(i=0;i<r;i++)
+      {    
+        for(j=0;j<c;j++)
+        {    
+          if(m[i][j]%2==0){
+          even+=1;
+          }
+          else{
+          odd+=1;
+          }
+        } }
+      System.out.println("Even elements frequency is:"+even);
+      System.out.println("Odd elements frequency is:"+odd);
+    }
+}     
+------------------------------------------------------------------------------
