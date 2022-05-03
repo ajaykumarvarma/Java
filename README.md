@@ -10,4 +10,4 @@
 
 [WEEK 4 PART1](https://java.ajaykumarvarma.in/JAVA/week4.java)
 
-[WEEK 4 PART2](https://filetransfer.io/data-package/0x61k5Fa#link)
+[WEEK 4 PART2](https://www.mediafire.com/file/hegdss1xtz0idnq/week4_java.zip/file)
