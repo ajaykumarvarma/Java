@@ -237,4 +237,50 @@ public static void main(String args[])
      }
 }     
 --------------------------------------------------------------------------------
-   
+#Sparse Matrix or not using java
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main{
+public static void main(String args[])
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter Matrix No Of Rows:");
+       int r=sc.nextInt();
+       System.out.print("Enter Matrix No Of Columns:");
+       int c=sc.nextInt();
+       int m[][]=new int[r][c];
+       
+       int i,j;
+       System.out.println("Enter Matrix elements:");
+       for(i=0;i<r;i++)
+      {
+       for(j=0;j<c;j++)
+       {
+          m[i][j]=sc.nextInt();
+       }
+       }
+       int div;
+       div=(r*c)/2;
+       int count=0;
+       for(i=0;i<r;i++)
+      {
+       for(j=0;j<c;j++)
+       {
+          if(m[i][j]==0){
+          count=count+1;
+           
+          }
+       }
+       }
+       if(count>div){
+       System.out.println("Sparse Matrix");
+       }
+       else{
+             System.out.println("Not a Sparse Matrix");
+       }
+               
+    }
+}     
+-------------------------------------------------------------------------
+
