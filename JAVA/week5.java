@@ -70,3 +70,78 @@ public static void main(String args[])
 }
 }
 -----------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+class Student1{
+    int length;
+    int width;
+    void insertrecord(int l,int w){
+    length=l;
+    width=w;
+    }
+    void display(){
+    System.out.println("Area is:"+(length*width));
+    }
+}
+class Student{
+public static void main(String args[])
+{
+    Student1 s1=new Student1();
+    Scanner sc=new Scanner(System.in);
+    int l,w;
+    System.out.print("Enter length and width:");
+    l=sc.nextInt();
+    w=sc.nextInt();
+    s1.insertrecord(l,w);
+    s1.display();
+}
+}
+-----------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+class Account{
+ int acc_no;
+ float amount;
+ String name;
+ void insert(int no,String na,float am){
+ acc_no=no;
+ name=na;
+ amount=am;
+ }
+ //deposit
+ void deposit(float amt){
+  amount+=amt;
+  System.out.println(amt+" Deposited successfully and total available balance is:"+amount);
+ }
+ void withdraw(float amt){
+ if(amount<amt){
+    System.out.println("InSufficient Funds");
+   }
+ else{
+   amount=amount-amt;
+   System.out.println(amt+" Withdrawn successfully and updated balance is:"+amount);
+ }
+ }
+ //check balance(Balance enquiry)
+ void checkbalance(){
+   System.out.println("Available total balance is:"+amount);
+ }
+ //display person bank details
+ void display(){
+  System.out.println(acc_no+" "+name+" "+amount);
+ }
+ -----------------------------------------------------------------------------------------------
+ 
+}
+class TestAccount{
+    public static void main(String args[]){
+        Account a1=new Account();
+        a1.insert(40221099,"Ajay Kumar Varma",25000);
+        a1.display();
+        a1.checkbalance();
+        a1.deposit(40000);  
+        a1.checkbalance();  
+	a1.withdraw(15000);  
+	a1.checkbalance();
+      }
+}
