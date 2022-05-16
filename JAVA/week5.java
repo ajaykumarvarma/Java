@@ -176,3 +176,36 @@ public static void main(String args[])
 }
 }
 -----------------------------------------------------------------------------------------------
+//default and parameterised constructor
+import java.io.*;
+import java.util.*;
+class Student1{
+    int sno;
+    String sname;
+    float smarks;
+    public Student1(int no,String name,float marks){
+    sno=no;
+    sname=name;
+    smarks=marks;
+    
+    }
+    public Student1(){
+    sno=0;
+    sname="pushpa";
+    smarks=0;
+    
+    }
+    void display(){
+    System.out.println("sno,sname and smarks of student is:"+sno+" "+sname+" "+smarks);
+    }
+}
+class Student{
+public static void main(String args[])
+{
+    Student1 s1=new Student1(2000,"Ajay",93);//parameterised constructor
+    Student1 s2=new Student1();//default constructor
+    s1.display();
+    s2.display();
+}
+}
+-----------------------------------------------------------------------------------------------	
