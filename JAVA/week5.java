@@ -145,3 +145,34 @@ class TestAccount{
       }
 }
 -----------------------------------------------------------------------------------------------
+Question Program 1:
+//using parameterised and default methods
+import java.io.*;
+import java.util.*;
+class Student1{
+    int sno=100;
+    String sname="Def name";
+    float smarks=50;
+    void insertrecord(int no,String name,float marks){
+    sno=no;
+    sname=name;
+    smarks=marks;
+    
+    }
+    void display(){
+    System.out.println("sno,sname and smarks of student is:"+sno+" "+sname+" "+smarks);
+    }
+}
+class Student{
+public static void main(String args[])
+{
+    Student1 s1=new Student1();
+    Student1 s2=new Student1();
+    //parameterised method lets use s1
+    s1.insertrecord(100,"sai",96);
+    s1.display();
+    //default method lets use s2
+    s2.display();
+}
+}
+-----------------------------------------------------------------------------------------------
