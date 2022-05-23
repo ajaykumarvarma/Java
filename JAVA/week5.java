@@ -273,4 +273,38 @@ public Employee1(int eno,String name,float sal,String city,int pincode){
  }
 }	
 -----------------------------------------------------------------------------------------------	
-	
+3rd:
+import java.io.*;
+import java.util.*;
+public class Book {
+    public static void main(String args[]){
+    details d1=new details(20011,"ajay_book",500,250);
+    d1.display();
+    d1.discount();
+    System.out.print("After price discount");
+    System.out.println();
+    d1.display();
+    }
+}
+class details{
+int bno;
+String bname;
+float price;
+int pages;
+public details(int bno,String bname,float price,int pages){
+this.bno=bno;
+this.bname=bname;
+this.price=price;
+this.pages=pages;
+}
+void discount(){
+price=price-100;
+}
+void display(){
+ System.out.println("Book number is:"+bno);
+ System.out.println("Book name is:"+bname);
+ System.out.println("Book price is:"+price);
+ System.out.println("Book No of Pages are:"+pages);
+ }
+}
+-----------------------------------------------------------------------------------------------
