@@ -176,36 +176,58 @@ public static void main(String args[])
 }
 }
 -----------------------------------------------------------------------------------------------
-//default and parameterised constructor
+1 A,B,C,D
 import java.io.*;
 import java.util.*;
 class Student1{
-    int sno;
-    String sname;
-    float smarks;
-    public Student1(int no,String name,float marks){
+    int sno=100;
+    String sname="Def name";
+    float smarks=50;
+    void insertrecord(int no,String name,float marks){
     sno=no;
     sname=name;
     smarks=marks;
     
     }
-    public Student1(){
-    sno=0;
-    sname="pushpa";
-    smarks=0;
-    
-    }
     void display(){
     System.out.println("sno,sname and smarks of student is:"+sno+" "+sname+" "+smarks);
     }
+    
+}
+class Student2{
+int sno;
+String sname;
+float smarks;
+public Student2(){
+sno=4;
+sname="ABC";
+smarks=90;
+}
+public Student2(int r,String n,float f){
+sno=r;
+sname=n;
+smarks=f;
+}
+void display(){
+System.out.println("sno,sname and smarks of student is:"+sno+" "+sname+" "+smarks);
+}
+
 }
 class Student{
+
+
 public static void main(String args[])
 {
-    Student1 s1=new Student1(2000,"Ajay",93);//parameterised constructor
-    Student1 s2=new Student1();//default constructor
+    Student1 s1=new Student1();
+    Student2 s2=new Student2();
     s1.display();
+    s1.insertrecord(100,"sai",96);
+    s1.display();
+    //constructor
+    Student2 s3=new Student2(20,"Ajay",91);
     s2.display();
+    s3.display();
+   
 }
 }
 -----------------------------------------------------------------------------------------------
