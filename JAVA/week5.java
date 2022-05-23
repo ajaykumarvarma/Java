@@ -231,3 +231,46 @@ public static void main(String args[])
 }
 }
 -----------------------------------------------------------------------------------------------
+2ND:
+
+import java.io.*;
+import java.util.*;
+public class Employee
+{
+   public static void main(String args[]){
+   Employee1 e1=new Employee1(2001,"Ajay",2500,"Vijayawada",520007);
+   e1.display();
+   e1.update();
+   System.out.print("After updating salary");
+   System.out.println();
+   e1.display();
+            
+   }   
+}
+class Employee1{
+int eno;
+String name;
+float sal;
+String city;
+int pincode;
+public Employee1(int eno,String name,float sal,String city,int pincode){
+ this.eno=eno;
+ this.name=name;
+ this.sal=sal;
+ this.city=city;
+ this.pincode=pincode;
+ 
+}
+ void update(){
+ sal=sal+1000;
+ }
+ void display(){
+ System.out.println("Employee number is:"+eno);
+ System.out.println("Employee name is:"+name);
+ System.out.println("Employee salary is:"+sal);
+ System.out.println("Employee city is:"+city);
+ System.out.println("Employee pincode is:"+pincode);
+ }
+}	
+-----------------------------------------------------------------------------------------------	
+	
