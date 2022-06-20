@@ -13,3 +13,5 @@
 [WEEK 4 PART 2](https://www.mediafire.com/file/hegdss1xtz0idnq/week4_java.zip/file)
 
 [WEEK 5](https://java.ajaykumarvarma.in/JAVA/week5.java)
+
+[WEEK 6](https://java.ajaykumarvarma.in/JAVA/week6.java)
