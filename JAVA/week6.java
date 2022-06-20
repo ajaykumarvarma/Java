@@ -98,3 +98,52 @@ public class inheritance
     }
 }
 ------------------------------------------------------------------------------------------------------------ 
+3.	Create a class person with the filed firstname, lastname. Use parameterized method to set the values to the variables at runtime. Create sub class Employee with the variable eno, edept, esal. Create parameterized method for setting the data and default method for display the information.
+
+import java.io.*;
+import java.util.*;
+class Person
+{
+    String a;
+    String b;
+    Person(String fname,String lname)
+    {
+        a=fname;
+        b=lname;
+    }
+    
+}
+class Employeee  extends Person
+
+{
+    int eno;
+    String edept;
+    float esal;
+    Employeee(String fname,String lname,int eno,String edept,float esal)
+    {
+       super(fname,lname); 
+       this.eno=eno;
+       this.edept=edept;
+       this.esal=esal;
+       
+    }        
+    void display()
+    {
+        System.out.println("The Fname and Lname of person are: "+a+" "+b);
+        System.out.println("The eno,edept and esal of Employee are:"+eno+" "+edept+" "+esal);
+    }
+}
+
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+       Employeee e=new Employeee("Nagaraju","Ajay Kumar Varma",1003451,"IT",80000);
+       e.display();
+       
+    }
+}
+-------------------------------------------------------------------------------------------------------------------- 
+ 
+ 
