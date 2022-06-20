@@ -45,5 +45,56 @@ public class inheritance{
     }
 }
 ------------------------------------------------------------------------------------------------------------  
-  
-  
+ 2.	Create a class Q with a variable q and consider default constructor for setting to q. Create a subclass R with a variable r and consider default constructor for setting to r. Create a subclass to R as S with a variable s and consider a default constructor for setting for s. Create a display function in each of the classes. Create a main method to call the functions
+
+ import java.io.*;
+import java.util.*;
+class Q
+{
+    int q;
+    public Q()
+    {
+        q=10;  
+    }
+    void display1()
+    {
+        System.out.println("The value of q is: "+q);
+    }
+}
+class R extends Q
+{
+    int r;
+    public R()
+    {
+        r=20;  
+    }
+    void display2()
+    {
+        System.out.println("The value of r is: "+r);
+    }
+}
+class S extends R
+{
+    int s;
+    public S()
+    {
+        s=30;  
+    }
+    void display3()
+    {
+        System.out.println("The value of s is: "+s);
+    }
+}
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+       S s1=new S();
+       s1.display1();
+       s1.display2();
+       s1.display3();
+       
+    }
+}
+------------------------------------------------------------------------------------------------------------ 
