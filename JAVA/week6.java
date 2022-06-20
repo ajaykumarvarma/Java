@@ -145,5 +145,127 @@ public class inheritance
     }
 }
 -------------------------------------------------------------------------------------------------------------------- 
- 
+4.	Modify the above program by creating a subclass of Employee called Department with the variables dno, dname, experience. Set parameterized method for setting the data and display all the information
+import java.io.*;
+import java.util.*;
+class Person
+{
+    String a;
+    String b;
+    Person(String fname,String lname)
+    {
+        a=fname;
+        b=lname;
+    }
+    
+}
+class Employeee  extends Person
+
+{
+    int eno;
+    String edept;
+    float esal;
+    Employeee(String fname,String lname,int eno,String edept,float esal)
+    {
+        super(fname,lname);
+        this.eno=eno;
+        this.edept=edept;
+        this.esal=esal;
+       
+    }        
+   
+}
+class Department  extends Employeee
+
+{
+    int dno;
+    String dname;
+    int dexp;
+    Department(String fname,String lname,int eno,String edept,float esal,int dno,String dname,int dexp)
+    {
+       super(fname,lname,eno,edept,esal);
+       this.dno=dno;
+       this.dname=dname;
+       this.dexp=dexp;
+       
+    }        
+    void display()
+    {
+        System.out.println("The Fname and Lname of person are: "+a+" "+b);
+        System.out.println("The eno,edept and esal of Employee are:"+eno+" "+edept+" "+esal);
+        System.out.println("The dno,dname and dexp are: "+dno+" "+dname+" "+dexp);
+    }
+}
+
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+      Department d=new Department("Ajay","Kumar",1003495,"IT",95000,10,"IT",4);
+      d.display();
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+class Person
+{
+    String a;
+    String b;
+    Person(String fname,String lname)
+    {
+        a=fname;
+        b=lname;
+    }
+    
+}
+class Employeee  extends Person
+
+{
+    int eno;
+    String edept;
+    float esal;
+    Employeee(String fname,String lname,int eno,String edept,float esal)
+    {
+        super(fname,lname);
+        this.eno=eno;
+        this.edept=edept;
+        this.esal=esal;
+       
+    }        
+   
+}
+class Department  extends Employeee
+
+{
+    int dno;
+    String dname;
+    int dexp;
+    Department(String fname,String lname,int eno,String edept,float esal,int dno,String dname,int dexp)
+    {
+       super(fname,lname,eno,edept,esal);
+       this.dno=dno;
+       this.dname=dname;
+       this.dexp=dexp;
+       
+    }        
+    void display()
+    {
+        System.out.println("The Fname and Lname of person are: "+a+" "+b);
+        System.out.println("The eno,edept and esal of Employee are:"+eno+" "+edept+" "+esal);
+        System.out.println("The dno,dname and dexp are: "+dno+" "+dname+" "+dexp);
+    }
+}
+
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+      Department d=new Department("Ajay","Kumar",1003495,"IT",95000,10,"IT",4);
+      d.display();
+    }
+}
+-------------------------------------------------------------------------------------------------------------
  
