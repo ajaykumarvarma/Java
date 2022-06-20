@@ -268,4 +268,97 @@ public class inheritance
     }
 }
 -------------------------------------------------------------------------------------------------------------
- 
+5.	Create a class named Employee with the following details
+ Data members:
+(a)	name (b) address (c) age (d) gender
+Methods :
+	(a ) Display () to show the employee details
+Create another class FullTimeEmployee that inherits the Employee class :
+	Data members :
+(a)	Salary	Designation
+Method :
+(a)	Display () to show the salary and designation along  with other employee details.
+Create another class PartTimeEmployee that inherits the Employee class :
+	Data members :
+(a)	Workinghours	rateperhour
+Methods :
+(a)	caluculatepay() to caluculate the amount payable
+(b)	display() to show the amount payable along with the employee details.
+Create objects of these classes and call their methods .use appropriate constructors.
+-------------
+import java.io.*;
+import java.util.*;
+class Employeee{
+    String name,address,gender;
+    int age;
+    Employeee(String name,String address,int age,String gender)
+    {
+        this.name = name;
+        this.address = address;
+        this.age = age;
+        this.gender = gender;
+    }
+    void display1()
+    {
+        System.out.println(name);
+        System.out.println(address);
+        System.out.println(age);
+        System.out.println(gender);
+    }
+}
+class FullTimeEmployee extends Employeee{
+    String designation;
+    float salary;
+    FullTimeEmployee(String name,String address,int age,String gender,String designation,float salary)
+    {
+        super(name,address,age,gender);
+        this.designation = designation;
+        this.salary = salary;
+    }
+    void display2()
+    {
+        System.out.println(name);
+        System.out.println(address);
+        System.out.println(age);
+        System.out.println(gender);
+        System.out.println(designation);
+        System.out.println(salary);
+
+    }
+}
+class PartTimeEmployee extends Employeee
+{
+    int workhours;
+    float rateperhr;
+    float totalpay;
+    PartTimeEmployee(String name,String address,int age,String gender,int workhours,float rateperhr)
+    {
+        super(name,address,age,gender);
+        this.workhours=workhours;
+        this.rateperhr=rateperhr;
+    }
+    void calculatepay()
+    {
+        totalpay=workhours*rateperhr;
+    }
+    void displaypay()
+    {
+        System.out.println("The total amount to pay forEmployee is :"+totalpay);
+    }
+   
+}
+
+
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+      FullTimeEmployee f=new FullTimeEmployee("Ajay","Vijayawada",19,"Male","SDE",100000);
+      f.display2();
+      PartTimeEmployee p=new PartTimeEmployee("Ajay","Vijayawada",19,"Male",8,300);
+      p.calculatepay();
+      p.displaypay();
+    }
+}
+------------------------------------------------------------------------------------------------------------- 
