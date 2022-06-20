@@ -362,3 +362,56 @@ public class inheritance
     }
 }
 ------------------------------------------------------------------------------------------------------------- 
+6.	Create a class Employer with company_name and city. Create a parameterised method companyDetails(String, String) to set the values to the two variables.  Create a showCompanyDetails() method to display the company information.
+Create a subclass Employee with eno,ename,esal. Create a parameterized constructor to set the values to these variables. create a showEmployee() to display the information.
+Create a main method to test the classes
+
+import java.io.*;
+import java.util.*;
+class Employer{
+    String company_name,city;
+    void p1(String company_name,String city)
+    {
+        this.company_name = company_name;
+        this.city = city;
+    }
+    void showCompanyDetails()
+    {
+        System.out.println("company info:");
+        System.out.println(company_name);
+        System.out.println(city);
+    }
+}
+class Employee2 extends Employer{
+    int eno;
+    String ename;
+    float esal;
+    void p2(int eno,String ename,float esal)
+    {
+        this.eno  =eno;
+        this.ename = ename;
+        this.esal = esal;
+    }
+    void showEmployee()
+    {
+        System.out.println("employee info:");
+        System.out.println(eno);
+        System.out.println(ename);    
+        System.out.println(esal);        
+
+    }
+}
+
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+      Employee2 e = new Employee2();
+        e.p1("WELLS FARGO","HYDERABAD");
+        e.showCompanyDetails();
+        e.p2(3549093,"AJAY",90000);
+        e.showEmployee();
+    }
+}
+------------------------------------------------------------------------------------------------------------------
