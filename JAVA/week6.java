@@ -456,7 +456,73 @@ Staff:
 Variable: sno,experience
 Methods:setStaff(int,int) and displayStaff()
 Create a class to access the information of all
---------------------------------------------------
+----------
+import java.io.*;
+import java.util.*;
+
+class person
+{
+  String fname,lname;
+  void setdata(String fname,String lname)
+  {
+     this.fname=fname;
+     this.lname=lname;
+  }
+  void display()
+  {
+      System.out.println("The fname and lname of person is: "+fname+" "+lname);
+  }
+}
+class employee extends person
+{
+   int eno;
+   double esal;
+   String designation;
+   void setEmployee(int eno, double esal, String designation)
+   {
+     this.eno=eno;
+     this.esal=esal;
+     this.designation=designation;
+   }
+   void displayEmployee()
+  {
+      System.out.println("The eno,esal and designation of employee is: "+eno+" "+esal+" "+designation);
+  }
+   
+   
+}
+class staff extends person
+{
+   int sno,exp;
+   void setStaff(int sno,int exp)
+   {
+       this.sno=sno;
+       this.exp=exp;
+   }
+   void displayStaff()
+   {
+       System.out.println("The Sno and Experience of Staff is: "+sno+" "+exp);
+   }
+}
+
+
+public class last
+{
+   public static void main(String args[])
+   {
+        staff s=new staff();
+        s.setStaff(10043,15);
+        
+        s.setdata("Ajay","Kumar Varma");
+        s.display();
+        employee e= new employee();
+        e.setEmployee(10043,50000.0,"Manager");
+        e.displayEmployee();
+        s.displayStaff();
+   }
+}
+------------------------------------------------------------------------------
+	
 	
 	
 	
