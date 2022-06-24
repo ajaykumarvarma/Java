@@ -447,5 +447,16 @@ public class inheritance
       
     }
 }
+----------------------------------------------------------------------------------------------------------------------
+8.Create a class Person with the fileds first name and last name. Set the data and print it. Create two subclasses employee and staff with the variables and methods:
+Employee:
+Variables: eno, esal, designation
+Methods: setEmployee(int, double, String) and displayEmployee()
+Staff:
+Variable: sno,experience
+Methods:setStaff(int,int) and displayStaff()
+Create a class to access the information of all
+--------------------------------------------------
+	
 	
 	
