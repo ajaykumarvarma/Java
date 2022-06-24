@@ -45,7 +45,7 @@ public class inheritance{
     }
 }
 ------------------------------------------------------------------------------------------------------------  
- 2.	Create a class Q with a variable q and consider default constructor for setting to q. Create a subclass R with a variable r and consider default constructor for setting to r. Create a subclass to R as S with a variable s and consider a default constructor for setting for s. Create a display function in each of the classes. Create a main method to call the functions
+ 2.Create a class Q with a variable q and consider default constructor for setting to q. Create a subclass R with a variable r and consider default constructor for setting to r. Create a subclass to R as S with a variable s and consider a default constructor for setting for s. Create a display function in each of the classes. Create a main method to call the functions
 
  import java.io.*;
 import java.util.*;
@@ -98,7 +98,7 @@ public class inheritance
     }
 }
 ------------------------------------------------------------------------------------------------------------ 
-3.	Create a class person with the filed firstname, lastname. Use parameterized method to set the values to the variables at runtime. Create sub class Employee with the variable eno, edept, esal. Create parameterized method for setting the data and default method for display the information.
+3.Create a class person with the filed firstname, lastname. Use parameterized method to set the values to the variables at runtime. Create sub class Employee with the variable eno, edept, esal. Create parameterized method for setting the data and default method for display the information.
 
 import java.io.*;
 import java.util.*;
@@ -145,7 +145,7 @@ public class inheritance
     }
 }
 -------------------------------------------------------------------------------------------------------------------- 
-4.	Modify the above program by creating a subclass of Employee called Department with the variables dno, dname, experience. Set parameterized method for setting the data and display all the information
+4.Modify the above program by creating a subclass of Employee called Department with the variables dno, dname, experience. Set parameterized method for setting the data and display all the information
 import java.io.*;
 import java.util.*;
 class Person
@@ -207,7 +207,7 @@ public class inheritance
     }
 }
 -------------------------------------------------------------------------------------------------------------
-5.	Create a class named Employee with the following details
+5.Create a class named Employee with the following details
  Data members:
 (a)	name (b) address (c) age (d) gender
 Methods :
@@ -301,7 +301,7 @@ public class inheritance
     }
 }
 ------------------------------------------------------------------------------------------------------------- 
-6.	Create a class Employer with company_name and city. Create a parameterised method companyDetails(String, String) to set the values to the two variables.  Create a showCompanyDetails() method to display the company information.
+6.Create a class Employer with company_name and city. Create a parameterised method companyDetails(String, String) to set the values to the two variables.  Create a showCompanyDetails() method to display the company information.
 Create a subclass Employee with eno,ename,esal. Create a parameterized constructor to set the values to these variables. create a showEmployee() to display the information.
 Create a main method to test the classes
 
@@ -354,3 +354,98 @@ public class inheritance
     }
 }
 ------------------------------------------------------------------------------------------------------------------
+7.Create a base class called person  
+with SSN  and name as data types with getdata and display as member functions. Derive a  new class called student with rollno, branch,mark1,mark2,mark3 as datamembers and getdata and display  as member functions and finally derive a new  class called grade from student class in that calculate the average for marks and display the  grade for the  student 
+            a. A grade >=90%
+            b. B grade>=80%
+            c. C grade>=70%
+d. Less than 70% fail.        
+----------------------------------------
+import java.io.*;
+import java.util.*;
+class Person
+{
+    int ssn;
+    String name;
+    void getdata(int ssn,String name)
+    {
+         this.ssn=ssn;
+         this.name=name;
+    }
+    void display()
+    {
+       System.out.println("The ssn of person is: "+ssn);
+       System.out.println("The name of person is: "+name);
+    }
+}
+class student extends Person
+{
+   int rollno;
+   String branch;
+   float mark1,mark2,mark3;
+   void getdata2(int rollno,String branch,float mark1,float mark2,float mark3)
+    {
+         this.rollno=rollno;
+         this.branch=branch;
+         this.mark1=mark1;
+         this.mark2=mark2;
+         this.mark3=mark3;
+    }
+    void display2()
+    {
+       System.out.println("The rollno of student is: "+rollno);
+       System.out.println("The branch of student is: "+branch);
+       System.out.println("The Mark1,Mark2 and Mark3 are:"+mark1+" "+mark2+" "+mark3);
+       
+    }
+   
+}
+class grade extends student
+{
+   float avg; 
+   float sum;
+   void average()
+   {
+     sum=mark1+mark2+mark3;
+     avg=sum/3;
+   }
+   void display3()
+   {
+       if(avg>=90)
+       {
+         System.out.println("A grade");
+       }
+       else if(avg>=80)
+       {
+         System.out.println("B grade");
+       }
+       else if(avg>=70)
+       {
+         System.out.println("C grade");
+       }
+       else if(avg<70)
+       {
+          System.out.println("Fail");
+       }
+   }
+   
+}
+
+public class inheritance
+{
+    
+    public static void main(String args[])
+    {
+      
+      grade g=new grade();
+      g.getdata(23035895,"Ajay");
+      g.display();
+      g.getdata2(99,"IT",90,90,89);
+      g.display2();
+      g.average();
+      g.display3();
+      
+    }
+}
+	
+	
